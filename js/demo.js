@@ -8,7 +8,7 @@
 * Copyright 2019, Codrops
 * http://www.codrops.com
 */
-{
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
     // helper functions
     const MathUtils = {
         // map number x from range [a, b] to [c, d]
