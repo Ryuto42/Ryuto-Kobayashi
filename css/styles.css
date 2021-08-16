@@ -3,46 +3,38 @@ body{
   margin: 0;
 }
 
+nav{
+  height: 60px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+nav li {
+  list-style-type: none;
+  float: right;
+  margin: 45px 70px 0px 0px;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #181818;
+  font-size: 18px;
+}
+
 #main {
   width: 100%;
   height: 100vh;
+  font-family: 'Raleway', sans-serif;
 }
 
 .main-visual{
   width: 100%;
+  height: 100%;
   background:linear-gradient(45deg, #00aeff3b,#22628042,#8ed9df3d);
   background-size: 200% 200%;/*サイズを大きくひきのばす*/
   animation: bggradient 40s ease infinite;
-  animation-name: anim;
-  animation-duration: 1.2s;
-  animation-timing-function: cubic-bezier(.5,0,.2,1);
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
   transform-origin: top left;
-}
-
-@keyframes anim {
-  0%{
-    transform: skewY(0deg);
-    height: 100vh;
-  }
-
-  100%{
-    transform: skewY(-10deg);
-    height: 95vh;
-  }
-}
-
-
-.main-text{
-}
-
-.main-text h1{
-  position: absolute;
-  margin: 0;
-  top: 30%;
- left: 50%;
- transform: translate(-50%,-50%);
+  z-index: -1;
 }
 
 @keyframes bggradient{
@@ -57,10 +49,6 @@ body{
   }
 }
 
-#about {
-  width: 100%;
-  height: 100vh;
-}
 
 section {
   position: relative;
@@ -71,24 +59,42 @@ section {
 
 #title {
   position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  font-size: 3em;
+  bottom: 11%;
+  left:8.2%;
+  color: #181818;
+  font-size: 4vmax;
   font-weight: bolder;
   z-index: 1;
 }
 
-#background {
+#description {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  width: calc(100% + 40px);
-  height: calc(100% + 40px);
-  background-image: url(https://into-the-program.com/uploads/3169.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  top:85%;
+  left:8.5%;
+  color: #181818;
+  font-size: 1.8vmax;
+  font-weight: bolder;
+  z-index: 1;
+}
+
+.sns{
+  position: relative;
+  z-index: 1;
+  float: left;
+  top: 8%;
+  left:87%;
+  height: 1.8vmax;
+  width: 100%;
+}
+.sns img{
+  height: 100%;
+  margin-right: 4%;
+}
+.sns-twitter img{
+  height: 90%;
+  margin-bottom: 0.1%;
+}
+.sns a{
+  height: 3.5vh;
+  width: 4vw;
 }

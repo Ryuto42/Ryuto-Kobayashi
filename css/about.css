@@ -1,0 +1,48 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-visual{
+  width: 100%;
+  background:linear-gradient(45deg, #00aeff3b,#22628042,#8ed9df3d);
+  background-size: 200% 200%;/*サイズを大きくひきのばす*/
+  animation: bggradient 40s ease infinite;
+  animation-name: anim;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier(.5,0,.2,1);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: top left;
+  z-index: -1;
+}
+
+@keyframes anim {
+  0%{
+    transform: skewY(0deg);
+    height: 100vh;
+  }
+
+  100%{
+    transform: skewY(-10deg);
+    height: 95vh;
+  }
+}
+
+
+@keyframes bggradient{
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
