@@ -2,10 +2,31 @@ body{
   padding: 0;
   margin: 0;
 }
-
 #main {
   width: 100%;
   height: 100vh;
+}
+#about{
+  width: 100%;
+  height: 100vh;
+}
+
+nav{
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+nav li {
+  list-style-type: none;
+  float: right;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin: 30px 40px 0px;
 }
 
 .main-visual{
@@ -45,4 +66,41 @@ body{
   100% {
     background-position: 0% 50%;
   }
+}
+
+.main-text{
+  position: absolute;
+  top: 17%;
+  height: auto;
+  width: 35%;
+  text-align: center;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.main-text h1{
+  font-size: 120px;
+  font-weight: 550;
+  letter-spacing: -0.02em;
+  margin-bottom: 0%;
+}
+.main-text h2{
+  margin-top: 0%;
+  font-size: 20px;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00aeff3b;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #00aeff1a;
+  border-radius: 5px;
 }
