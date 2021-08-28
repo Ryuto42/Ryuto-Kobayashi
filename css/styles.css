@@ -77,6 +77,42 @@ section {
   z-index: 1;
 }
 
+.img{
+  position: relative;
+  width: 430px;
+  height: 40%;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.img-about{
+  float: right;
+  text-align: center;
+  width: 140px;
+  margin: 0%;
+}
+
+.img-works{
+  float: right;
+  text-align: center;
+  width: 140px;
+  margin-left: 150px;
+}
+
+.img img{
+  height: 140px;
+}
+.img a{
+  text-decoration: none;
+}
+.img h3{
+  margin: 0;
+  padding-top: 30px;
+  color: #181818;
+  font-size: 20px;
+}
+
 
 @media screen and (max-width:865px){
   #title {
