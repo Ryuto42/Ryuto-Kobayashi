@@ -20,6 +20,13 @@ nav a {
   display: block;
   text-decoration: none;
 }
+.sns-twitter img{
+  width: 32px;
+}
+nav img{
+  width: 27px;
+}
+
 
 #main {
   min-height: 100vh;
@@ -79,9 +86,9 @@ section {
 
 .img{
   position: relative;
-  width: 430px;
-  height: 40%;
-  top: 50%;
+  width: 410px;
+  height: 186px;
+  top: 45%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
@@ -89,19 +96,18 @@ section {
 .img-about{
   float: right;
   text-align: center;
-  width: 140px;
+  width: 130px;
   margin: 0%;
 }
-
 .img-works{
   float: right;
   text-align: center;
-  width: 140px;
+  width: 130px;
   margin-left: 150px;
 }
 
 .img img{
-  height: 140px;
+  height: 130px;
 }
 .img a{
   text-decoration: none;
@@ -126,15 +132,37 @@ section {
     font-size: 25px;
   }
 
-  .sns{
-    top: 8%;
-    left:80%;
-    height: 3%;
-    width: 100%;
+  
+  nav li {
+    margin: 45px 65px 0 10px;
   }
-  .sns img{
-    height: 100%;
-    margin-right: 6%;
+  .sns-twitter img{
+    width: 28px;
+  }
+  nav img{
+    width: 24px;
+  }
+
+
+  .img{
+    width: 370px;
+    height: 186px;
+  }
+  .img-about{
+    width: 110px;
+  }
+  
+  .img-works{
+    width: 110px;
+    margin-left: 150px;
+  }
+  
+  .img img{
+    height: 110px;
+  }
+  .img h3{
+    padding-top: 30px;
+    font-size: 18px;
   }
 }
 
@@ -150,14 +178,33 @@ section {
     font-size: 17px;
   }
 
-  .sns{
-    top: 8%;
-    left:71%;
-    height: 2.8%;
-    width: 100%;
+  nav li {
+    margin: 40px 45px 0 10px;
   }
-  .sns img{
-    height: 100%;
-    margin-right: 8%;
+  .sns-twitter img{
+    width: 27px;
+  }
+  nav img{
+    width: 23px;
+  }
+
+  .img{
+    width: 240px;
+    height: 186px;
+    top: 50%;
+  }
+  .img-about{
+    width: 85px;
+  }
+  .img-works{
+    width: 85px;
+    margin-left: 70px;
+  }
+  .img img{
+    height: 85px;
+  }
+  .img h3{
+    padding-top: 30px;
+    font-size: 16px;
   }
 }

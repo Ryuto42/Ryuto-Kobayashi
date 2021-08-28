@@ -16,6 +16,7 @@ nav{
   position: fixed;
   width: 100%;
   z-index: 1;
+  font-family: 'Raleway', sans-serif;
 }
 nav li {
   list-style-type: none;
@@ -25,7 +26,8 @@ nav a {
   display: block;
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 600;
   margin: 30px 40px 0px;
 }
 
@@ -72,7 +74,6 @@ nav a {
   position: absolute;
   top: 17%;
   height: auto;
-  width: 35%;
   text-align: center;
   left: 50%;
   margin-right: -50%;
@@ -84,10 +85,13 @@ nav a {
   font-weight: 550;
   letter-spacing: -0.02em;
   margin-bottom: 0%;
+  font-family: 'Ubuntu', sans-serif;
 }
 .main-text h2{
   margin-top: 0%;
   font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
 }
 
 
@@ -103,4 +107,64 @@ nav a {
 ::-webkit-scrollbar-track {
   background: #00aeff1a;
   border-radius: 5px;
+}
+
+@media screen and (max-width:865px){
+  nav a {
+    font-size: 19px;
+    margin: 35px 45px 0px;
+  }
+
+  .main-text{
+    position: absolute;
+    top: 17%;
+    height: auto;
+    text-align: center;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+  .main-text h1{
+    font-size: 90px;
+  }
+  .main-text h2{
+    margin-top: 0%;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width:480px){
+  @keyframes anim {
+    0%{
+      transform: skewY(0deg);
+      height: 100vh;
+    }
+  
+    100%{
+      transform: skewY(-10deg);
+      height: 65vh;
+    }
+  }
+
+  nav a {
+    font-size: 17px;
+    margin: 20px 30px 0px;
+  }
+
+  .main-text{
+    position: absolute;
+    top: 30%;
+    height: auto;
+    text-align: center;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+  .main-text h1{
+    font-size: 70px;
+    margin-top: 0;
+  }
+  .main-text h2{
+    margin-top: 0%;
+    font-size: 17px;
+  }
 }
