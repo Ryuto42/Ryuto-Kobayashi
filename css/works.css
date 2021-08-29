@@ -71,7 +71,7 @@ nav a {
 
 .main-text{
   position: absolute;
-  top: 17%;
+  top: 32.5%;
   height: auto;
   text-align: center;
   left: 50%;
@@ -85,40 +85,30 @@ nav a {
   letter-spacing: -0.02em;
   margin-bottom: 0%;
   font-family: 'Ubuntu', sans-serif;
+  animation-delay: 0.2s;
 }
 .main-text h2{
   margin-top: 0%;
+  margin-bottom: 0%;
   font-size: 20px;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
+  animation-delay: 0.3s;
 }
+.delay-animation{
+  animation: delay-animation .8s cubic-bezier(0,.7,.3,1) both;
+}  
 
-.about-text h1{
-  text-align: center;
-  margin-top: 20%;
+@keyframes delay-animation{
+  0% {
+    transform: translateY(100px) rotate(6deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0) rotate(.01deg);
+    opacity: 1;
+  }
 }
-
-/* 左から流れるアニメーション */
-.fadeInRight {
-  -webkit-animation-fill-mode:both;
-  -ms-animation-fill-mode:both;
-  animation-fill-mode:both;
-  -webkit-animation-duration:1s;
-  -ms-animation-duration:1s;
-  animation-duration:1s;
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-  visibility: visible !important;
- }
- @-webkit-keyframes fadeInRight {
-  0% { opacity: 0; -webkit-transform: translateX(-20px); }
-  100% { opacity: 1; -webkit-transform: translateX(0); }
- }
- @keyframes fadeInRight {
-  0% { opacity: 0; -webkit-transform: translateX(-20px); -ms-transform: translateX(-20px); transform: translateX(-20px); }
-  100% { opacity: 1; -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
- }
-
 
 footer{
   width: auto;
@@ -182,7 +172,7 @@ footer p{
 
   .main-text{
     position: absolute;
-    top: 17%;
+    top: 32.5%;
     height: auto;
     text-align: center;
     left: 50%;
