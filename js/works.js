@@ -1,8 +1,3 @@
-var vh=window.innerHeight;
-$('section').css('height',$(window).height());
-console.log(vh);
-
-
 $(function() {
   $('a:not([href^="#"]):not([target])').on('click', function(e){
       e.preventDefault();

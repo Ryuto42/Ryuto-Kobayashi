@@ -21,7 +21,15 @@
 </head>
 
 
-<body>
+<body class="is_fade">
+  <script>
+    var fixLoad = function(){
+        document.body.classList.remove("is_fade");
+        document.body.classList.remove("is_remove");
+    } 
+    setTimeout(fixLoad, 1000);
+  </script>
+  <div class="md_transition"></div>
   <main>  
     <nav>
       <li>
@@ -58,5 +66,6 @@
   </main>
   <script src="js/imagesloaded.pkgd.min.js"></script>
   <script src="js/demo.js"></script>
+  <script src="js/works.js"></script>
 </body>
 </html>

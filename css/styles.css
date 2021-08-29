@@ -116,6 +116,44 @@ section {
   font-size: 20px;
 }
 
+.md_transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform .4s cubic-bezier(.39, .575, .565, 1) 0s; 
+  /* ここの最後の0.8sを増減するとアニメーションの開始タイミングを変更できます */
+  z-index: 999999;
+}
+
+.md_transition::before {
+  background: webkit-gradient(linear, left bottom, left top, from(hsla(0, 0%, 100%, 0)), color-stop(33.33333%, #fff), color-stop(66.66667%, #fff), to(hsla(0, 0%, 100%, 0)));
+  background: -o-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0, #fff 33.33333%, #fff 66.66667%, hsla(0, 0%, 100%, 0) 100%);
+  background: linear-gradient(0deg, hsla(0, 0%, 100%, 0), rgb(239, 252, 255) 33.33333%, rgb(228, 240, 255) 66.66667%, hsla(0, 0%, 100%, 0));
+  content: "";
+  display: block;
+  width: 100%;
+  height: 300%;
+  position: absolute;
+  left: 0;
+  top: -100%;
+}
+body.is_remove .md_transition {
+  -webkit-animation: maskCloseTransition .8s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
+  animation: maskCloseTransition .8s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
+}
+body:not(.is_fade) .md_transition {
+  transform: translateY(-200%);
+}
+@-webkit-keyframes maskCloseTransition {
+  0% { transform: translateY(200%); }
+  to { transform: translate(0); }
+}
+@keyframes maskCloseTransition {
+  0% { transform: translateY(200%); }
+  to { transform: translate(0); }
+}
 
 @media screen and (max-width:865px){
   #title {
