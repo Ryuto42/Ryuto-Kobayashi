@@ -94,7 +94,34 @@ nav a {
   font-weight: 400;
 }
 
+footer{
+  width: auto;
+  height: 80px;
+}
+footer p{
+  font-size: 17px;
+  width: 30%;
+  float: left;
+  margin-top: 5px;
+  margin-left: 50px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.sns li {
+  list-style-type: none;
+  float: right;
+  margin: 0px 65px 0 10px;
+}
 
+.sns a {
+  display: block;
+  text-decoration: none;
+}
+.sns-twitter img{
+  width: 29px;
+}
+.sns-instagram img{
+  width: 25px;
+}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -131,6 +158,24 @@ nav a {
     margin-top: 0%;
     font-size: 19px;
   }
+
+  footer{
+    height: 60px;
+  }
+  footer p{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 50px;
+  }
+  .sns li {
+    margin: 0px 65px 0 10px;
+  }
+  .sns-twitter img{
+    width: 27px;
+  }
+  .sns-instagram img{
+    width: 23px;
+  }
 }
 @media screen and (max-width:480px){
   @keyframes anim {
@@ -166,5 +211,24 @@ nav a {
   .main-text h2{
     margin-top: 0%;
     font-size: 17px;
+  }
+
+  footer{
+    height: 50px;
+  }
+  footer p{
+    font-size: 14px;
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+  .sns li {
+    margin: 0px 25px 0 10px;
+  }
+  .sns-twitter img{
+    width: 24px;
+  }
+  .sns-instagram img{
+    width: 20px;
   }
 }
