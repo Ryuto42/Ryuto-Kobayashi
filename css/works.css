@@ -152,6 +152,7 @@ footer p{
   border-radius: 5px;
 }
 
+/* 遷移アニメーション */
 .md_transition {
   position: fixed;
   top: 0;
@@ -162,7 +163,6 @@ footer p{
   /* ここの最後の0.8sを増減するとアニメーションの開始タイミングを変更できます */
   z-index: 999999;
 }
-
 .md_transition::before {
   background: webkit-gradient(linear, left bottom, left top, from(hsla(0, 0%, 100%, 0)), color-stop(33.33333%, #fff), color-stop(66.66667%, #fff), to(hsla(0, 0%, 100%, 0)));
   background: -o-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0, #fff 33.33333%, #fff 66.66667%, hsla(0, 0%, 100%, 0) 100%);

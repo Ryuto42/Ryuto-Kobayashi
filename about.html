@@ -23,7 +23,15 @@
 </head>
 
 
-<body>
+<body class="is_fade">
+  <script>
+    var fixLoad = function(){
+        document.body.classList.remove("is_fade");
+        document.body.classList.remove("is_remove");
+    } 
+    setTimeout(fixLoad, 1000);
+  </script>
+  <div class="md_transition"></div>
   <main>  
     <nav>
       <li>
@@ -34,8 +42,8 @@
       <div id="main">
         <div class="main-visual"></div>
         <div class="main-text">
-          <h1>About</h1>
-          <h2>Self-Introduction</h2>
+          <h1 class="delay-animation">About</h1>
+          <h2 class="delay-animation">Self-Introduction</h2>
         </div>
       </div>
       <div id="about">
