@@ -1,6 +1,13 @@
 body{
   padding: 0;
   margin: 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;    /* IE、Edge用 */
+  scrollbar-width: none;    /* Firefox用 */
+  }
+  
+body::-webkit-scrollbar {    /* Chrome、Safari用 */
+  display:none;
 }
 
 nav {
@@ -21,10 +28,10 @@ nav a {
   text-decoration: none;
 }
 .sns-twitter img{
-  width: 32px;
+  width: 29px;
 }
 nav img{
-  width: 27px;
+  width: 24px;
 }
 
 
@@ -35,7 +42,7 @@ nav img{
 .main-visual{
   width: 100%;
   height: 100%;
-  background:linear-gradient(45deg, #00aeff3b,#22628042,#8ed9df3d);
+  background:linear-gradient(45deg, #b5cad43b,#22628042,#8ed9df3d);
   background-size: 200% 200%;/*サイズを大きくひきのばす*/
   animation: bggradient 40s ease infinite;
   transform-origin: top left;
@@ -66,9 +73,12 @@ section {
   bottom: 8%;
   left:8.2%;
   color: #181818;
-  font-size: 70px;
+  font-size: 64px;
   font-weight: bolder;
   z-index: 1;
+
+  animation: fadeInRight 1.6s cubic-bezier(0,.7,.3,1) both;
+  animation-delay: 1s;
 }
 
 #description {
@@ -76,14 +86,23 @@ section {
   top:85%;
   left:8.5%;
   color: #181818;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bolder;
   z-index: 1;
+
+  animation: fadeInRight 1.6s cubic-bezier(0,.7,.3,1) both;
+  animation-delay: 1.1s;
 }
+
+ @keyframes fadeInRight {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+ }
+
 
 .img{
   position: relative;
-  width: 410px;
+  width: 400px;
   height: 186px;
   top: 45%;
   left: 50%;
@@ -93,13 +112,13 @@ section {
 .img-about{
   float: right;
   text-align: center;
-  width: 130px;
+  width: 125px;
   margin: 0%;
 }
 .img-works{
   float: right;
   text-align: center;
-  width: 130px;
+  width: 125px;
   margin-left: 150px;
 }
 
@@ -159,12 +178,12 @@ body:not(.is_fade) .md_transition {
   #title {
     bottom: 8%;
     left:8.2%;
-    font-size: 55px;
+    font-size: 53px;
   }
   #description {
     top:85%;
     left:8.5%;
-    font-size: 25px;
+    font-size: 24px;
   }
 
   
@@ -180,7 +199,7 @@ body:not(.is_fade) .md_transition {
 
 
   .img{
-    width: 370px;
+    width: 360px;
     height: 186px;
   }
   .img-about{
@@ -189,7 +208,7 @@ body:not(.is_fade) .md_transition {
   
   .img-works{
     width: 110px;
-    margin-left: 150px;
+    margin-left: 140px;
   }
   
   .img img{

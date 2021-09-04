@@ -29,7 +29,18 @@ nav a {
   font-size: 23px;
   font-weight: 600;
   margin: 30px 40px 0px;
+  animation: anima 2s cubic-bezier(0,.7,.3,1) both;
+  animation-delay: 1.5s;
 }
+@keyframes anima{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 
 .main-visual{
   width: 100%;
@@ -37,6 +48,7 @@ nav a {
   background-size: 200% 200%;/*サイズを大きくひきのばす*/
   animation: bggradient 40s ease infinite;
   animation-name: anim;
+  animation-delay: .9s;
   animation-duration: 1.2s;
   animation-timing-function: cubic-bezier(.5,0,.2,1);
   animation-iteration-count: 1;
@@ -85,7 +97,7 @@ nav a {
   letter-spacing: -0.02em;
   margin-bottom: 0%;
   font-family: 'Ubuntu', sans-serif;
-  animation-delay: 1.2s;
+  animation-delay: 1.3s;
 }
 .main-text h2{
   margin-top: 0%;
@@ -93,7 +105,7 @@ nav a {
   font-size: 20px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
-  animation-delay: 1.3s;
+  animation-delay: 1.4s;
 }
 .delay-animation{
   animation: delay-animation .8s cubic-bezier(0,.7,.3,1) both;
