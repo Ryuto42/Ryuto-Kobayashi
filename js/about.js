@@ -4,7 +4,7 @@ $(window).scroll(function(){
      topWindow = $(window).scrollTop();
  $('.animation').each(function(){
   var targetPosition = $(this).offset().top;
-   if(topWindow > targetPosition - windowHeight + 150){
+   if(topWindow > targetPosition - windowHeight + 30){
     //ここで表示時間の変化できる
    $(this).addClass("fadeInRight");
   }
