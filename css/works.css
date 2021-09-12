@@ -6,10 +6,13 @@ body{
   width: 100%;
   height: 100vh;
 }
-#about{
-  width: 100%;
-  height: 100vh;
+#works{
+  width: 70%;
+  height: 500vh;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 
 nav{
   height: 60px;
@@ -49,7 +52,7 @@ nav a {
   animation: bggradient 40s ease infinite;
   animation-name: anim;
   animation-delay: .9s;
-  animation-duration: 1.2s;
+  animation-duration: .7s;
   animation-timing-function: cubic-bezier(.5,0,.2,1);
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -83,7 +86,7 @@ nav a {
 
 .main-text{
   position: absolute;
-  top: 32.5%;
+  top: 6%;
   height: auto;
   text-align: center;
   left: 50%;
@@ -104,13 +107,12 @@ nav a {
   margin-bottom: 0%;
   font-size: 20px;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   animation-delay: 1.4s;
 }
 .delay-animation{
   animation: delay-animation .8s cubic-bezier(0,.7,.3,1) both;
 }  
-
 @keyframes delay-animation{
   0% {
     transform: translateY(100px) rotate(6deg);
@@ -121,6 +123,14 @@ nav a {
     opacity: 1;
   }
 }
+
+
+.works-element{
+  height: 8%;
+  margin-bottom: 5%;
+  width: auto;
+}
+
 
 footer{
   width: auto;
@@ -223,7 +233,7 @@ body:not(.is_fade) .md_transition {
 
   .main-text{
     position: absolute;
-    top: 32.5%;
+    top: 6%;
     height: auto;
     text-align: center;
     left: 50%;
@@ -276,7 +286,7 @@ body:not(.is_fade) .md_transition {
 
   .main-text{
     position: absolute;
-    top: 30%;
+    top: 6%;
     height: auto;
     text-align: center;
     left: 50%;
