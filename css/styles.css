@@ -69,6 +69,8 @@ section {
 }
 
 #title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
   position: absolute;
   bottom: 8%;
   left:8.2%;

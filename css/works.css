@@ -286,7 +286,7 @@ body:not(.is_fade) .md_transition {
 
   .main-text{
     position: absolute;
-    top: 6%;
+    top: 12%;
     height: auto;
     text-align: center;
     left: 50%;
