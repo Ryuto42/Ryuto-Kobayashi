@@ -35,9 +35,6 @@ nav img{
 }
 
 
-#main {
-  font-family: 'Raleway', sans-serif;
-}
 
 .main-visual{
   width: 100%;
@@ -69,8 +66,8 @@ section {
 }
 
 #title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   position: absolute;
   bottom: 8%;
   left:8.2%;
@@ -84,6 +81,7 @@ section {
 }
 
 #description {
+  font-family: 'Raleway', sans-serif;
   position: absolute;
   top:85%;
   left:8.5%;
@@ -135,6 +133,8 @@ section {
   padding-top: 30px;
   color: #181818;
   font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 .md_transition {
