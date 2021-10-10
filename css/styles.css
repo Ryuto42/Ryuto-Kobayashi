@@ -177,7 +177,7 @@ body:not(.is_fade) .md_transition {
   to { transform: translate(0); }
 }
 
-@media screen and (max-width:865px){
+@media screen and (max-width:960px){
   #title {
     bottom: 6%;
     left:8.2%;
