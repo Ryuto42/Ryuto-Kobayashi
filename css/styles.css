@@ -240,10 +240,10 @@ body:not(.is_fade) .md_transition {
     margin: 40px 45px 0 10px;
   }
   .sns-twitter img{
-    width: 27px;
+    width: 25px;
   }
   nav img{
-    width: 23px;
+    width: 22px;
   }
 
   .img{
@@ -264,5 +264,49 @@ body:not(.is_fade) .md_transition {
   .img h3{
     padding-top: 30px;
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 340px){
+  #title {
+    letter-spacing: 1.2px;
+    bottom: 5%;
+    left:8.2%;
+    font-size: 34px;
+  }
+  #description {
+    top: 89%;
+    left:8.5%;
+    font-size: 16px;
+  }
+
+  nav li {
+    margin: 40px 45px 0 10px;
+  }
+  .sns-twitter img{
+    width: 22px;
+  }
+  nav img{
+    width: 20px;
+  }
+
+  .img{
+    width: 220px;
+    height: 186px;
+    top: 50%;
+  }
+  .img-about{
+    width: 80px;
+  }
+  .img-works{
+    width: 80px;
+    margin-left: 60px;
+  }
+  .img img{
+    height: 85px;
+  }
+  .img h3{
+    padding-top: 30px;
+    font-size: 15px;
   }
 }
