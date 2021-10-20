@@ -83,10 +83,12 @@ nav a {
     background-position: 0% 50%;
   }
 }
-
+#main{
+  position: relative;
+}
 .main-text{
   position: absolute;
-  top: 6%;
+  top: 30%;
   height: auto;
   text-align: center;
   left: 50%;
@@ -124,11 +126,32 @@ nav a {
   }
 }
 
-
+#works a{
+  text-decoration: none;
+}
 .works-element{
   height: 8%;
   margin-bottom: 5%;
   width: auto;
+}
+.works-img{
+  width: 48%;
+  float: left;
+}
+.works-img img{
+  width: 100%;
+}
+.works-text{
+  width: 45%;
+  float: right;
+  color: black;
+}
+.works-text h1{
+  font-size: 3vw;
+  font-family: 'Ubuntu', sans-serif;
+}
+.works-text p{
+  font-size: 14px;
 }
 
 
@@ -225,6 +248,9 @@ body:not(.is_fade) .md_transition {
       height: 85vh;
     }
   }
+  #main{
+    height: 95vh;
+  }
 
   nav a {
     font-size: 19px;
@@ -233,7 +259,7 @@ body:not(.is_fade) .md_transition {
 
   .main-text{
     position: absolute;
-    top: 6%;
+    top: 33%;
     height: auto;
     text-align: center;
     left: 50%;
@@ -246,6 +272,21 @@ body:not(.is_fade) .md_transition {
   .main-text h2{
     margin-top: 0%;
     font-size: 19px;
+  }
+  #works{
+    width: 90%;
+    height: 500vh;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .works-text{
+    width: 45%;
+  }
+  .works-text h1{
+    font-size: 3.5vw;
+  }
+  .works-text p{
+    font-size: 12px;
   }
 
   footer{
@@ -279,6 +320,10 @@ body:not(.is_fade) .md_transition {
     }
   }
 
+  #main{
+    height: 80vh;
+  }
+
   nav a {
     font-size: 17px;
     margin: 20px 30px 0px;
@@ -300,6 +345,35 @@ body:not(.is_fade) .md_transition {
   .main-text h2{
     margin-top: 0%;
     font-size: 17px;
+  }
+
+  #works{
+    width: 80%;
+    height: 700vh;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .works-element{
+    height: 7%;
+    margin-bottom: 5%;
+    width: auto;
+  }
+  .works-img{
+    width: 100%;
+    float: none;
+  }
+  .works-img img{
+    width: 100%;
+  }
+  .works-text{
+    width: 90%;
+    float: none;
+  }
+  .works-text h1{
+    font-size: 30px;
+  }
+  .works-text p{
+    font-size: 13px;
   }
 
   footer{
