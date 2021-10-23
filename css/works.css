@@ -131,10 +131,13 @@ nav a {
   text-decoration: none;
 }
 .works-element{
-  height: 8%;
-  margin-bottom: 5%;
+  height: 19vw;
+  margin-bottom: 13%;
   width: auto;
-  position: absolute;
+  transition: 1s;
+}
+.works-element:hover{
+  padding: 10px;
 }
 .works-img{
   width: 48%;
@@ -151,7 +154,26 @@ nav a {
 .works-text h1{
   font-size: 3vw;
   font-family: 'Ubuntu', sans-serif;
+  display: inline;
 }
+.background-size{
+  background: linear-gradient(135deg,#8dd1ff,#2a78c1);
+  background-repeat: no-repeat;
+  background-position: 8px bottom;
+  background-size: 87% 35%;
+
+}
+.fadeIn {
+  animation-duration:1.8s;
+  animation-name: fadeIn;
+  visibility: visible !important;
+ }
+
+ @keyframes fadeIn {
+  0% { opacity: 0;  transform: translateY(100px); }
+  100% { opacity: 1;  transform: translateY(0px); }
+ }
+
 .works-text p{
   font-size: 14px;
 }
@@ -281,6 +303,13 @@ body:not(.is_fade) .md_transition {
     margin-right: auto;
     margin-left: auto;
   }
+  .works-element{
+    height: 25vw;
+    margin-bottom: 15%;
+  }
+  .works-element:hover{
+    padding: 7px;
+  }
   .works-text{
     width: 45%;
   }
@@ -321,6 +350,13 @@ body:not(.is_fade) .md_transition {
       height: 65vh;
     }
   }
+  .fadeIn {
+    animation-duration:1s;
+   }
+  @keyframes fadeIn {
+    0% { opacity: 0;  transform: translateY(70px); }
+    100% { opacity: 1;  transform: translateY(0px); }
+  }
 
   #main{
     height: 80vh;
@@ -356,8 +392,8 @@ body:not(.is_fade) .md_transition {
     margin-left: auto;
   }
   .works-element{
-    height: 7%;
-    margin-bottom: 5%;
+    height: 6.5%;
+    margin-bottom: 10%;
     width: auto;
   }
   .works-img{
@@ -368,7 +404,7 @@ body:not(.is_fade) .md_transition {
     width: 100%;
   }
   .works-text{
-    width: 90%;
+    width: 100%;
     float: none;
   }
   .works-text h1{
@@ -376,6 +412,7 @@ body:not(.is_fade) .md_transition {
   }
   .works-text p{
     font-size: 13px;
+    width: 100%;
   }
 
   footer{
