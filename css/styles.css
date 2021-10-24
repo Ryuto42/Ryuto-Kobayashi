@@ -68,7 +68,7 @@ section {
 #title {
   font-family: 'Mukta', sans-serif;
   font-weight: 500;
-  letter-spacing: 2.5px;
+  letter-spacing: .25vw;
   position: absolute;
   bottom: 5%;
   left:8.2%;
@@ -225,7 +225,7 @@ body:not(.is_fade) .md_transition {
 
 @media screen and (max-width: 520px){
   #title {
-    letter-spacing: 1.5px;
+    letter-spacing: .35vw;
     bottom: 5%;
     left:8.2%;
     font-size: 36px;
@@ -269,7 +269,7 @@ body:not(.is_fade) .md_transition {
 
 @media screen and (max-width: 340px){
   #title {
-    letter-spacing: 1px;
+    letter-spacing: .25vw;
     bottom: 5%;
     left:8.2%;
     font-size: 34px;
@@ -277,7 +277,7 @@ body:not(.is_fade) .md_transition {
   #description {
     top: 89%;
     left:8.5%;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   nav li {
