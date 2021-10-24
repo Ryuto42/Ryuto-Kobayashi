@@ -8,7 +8,7 @@ body{
 }
 #works{
   width: 70%;
-  height: 500vh;
+  height: 88vw;
   margin-right: auto;
   margin-left: auto;
   position: relative;
@@ -161,8 +161,20 @@ nav a {
   background-repeat: no-repeat;
   background-position: 8px bottom;
   background-size: 87% 35%;
-
 }
+.background-size-green{
+  background: linear-gradient(135deg, rgb(108, 201, 82), rgb(73, 180, 38));
+  background-repeat: no-repeat;
+  background-position: 8px bottom;
+  background-size: 87% 35%;
+}
+.background-size-red{
+  background: linear-gradient(135deg, rgb(255, 132, 132), rgb(216, 54, 54));
+  background-repeat: no-repeat;
+  background-position: 8px bottom;
+  background-size: 87% 35%;
+}
+
 .fadeIn {
   animation-duration:1.8s;
   animation-name: fadeIn;
@@ -299,7 +311,7 @@ body:not(.is_fade) .md_transition {
   }
   #works{
     width: 90%;
-    height: 500vh;
+    height: 120vw;
     margin-right: auto;
     margin-left: auto;
   }
@@ -327,9 +339,10 @@ body:not(.is_fade) .md_transition {
     font-size: 16px;
     margin-top: 5px;
     margin-left: 50px;
+    width: 50%;
   }
   .sns li {
-    margin: 0px 65px 0 10px;
+    margin: 0px 50px 0 10px;
   }
   .sns-twitter img{
     width: 27px;
@@ -387,14 +400,19 @@ body:not(.is_fade) .md_transition {
 
   #works{
     width: 80%;
-    height: 700vh;
+    height: 275vw;
     margin-right: auto;
     margin-left: auto;
   }
   .works-element{
-    height: 6.5%;
-    margin-bottom: 10%;
+    height: 75vw;
+    margin-bottom: 18%;
     width: auto;
+    padding: 0px;
+  }
+  .works-element:hover{
+    padding: 0px;
+    opacity: 0.7;
   }
   .works-img{
     width: 100%;
