@@ -135,10 +135,21 @@ nav a {
   margin-bottom: 13%;
   width: auto;
   transition: 1s;
+  animation: anim-none .8s both;
+}
+@keyframes anim-none{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .works-element:hover{
   padding: 10px;
 }
+
+
 .works-img{
   width: 48%;
   float: left;
@@ -285,7 +296,7 @@ body:not(.is_fade) .md_transition {
     }
   }
   #main{
-    height: 95vh;
+    height: 100vh;
   }
 
   nav a {
@@ -360,7 +371,7 @@ body:not(.is_fade) .md_transition {
   
     100%{
       transform: skewY(-10deg);
-      height: 65vh;
+      height: 80vh;
     }
   }
   .fadeIn {
@@ -372,7 +383,7 @@ body:not(.is_fade) .md_transition {
   }
 
   #main{
-    height: 80vh;
+    height: 100vh;
   }
 
   nav a {
@@ -382,7 +393,7 @@ body:not(.is_fade) .md_transition {
 
   .main-text{
     position: absolute;
-    top: 30%;
+    top: 40%;
     height: auto;
     text-align: center;
     left: 50%;
