@@ -383,7 +383,7 @@ body:not(.is_fade) .md_transition {
   }
 
   #main{
-    height: 100vh;
+    height: 95vh;
   }
 
   nav a {
