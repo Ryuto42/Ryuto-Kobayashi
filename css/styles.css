@@ -218,7 +218,6 @@ body:not(.is_fade) .md_transition {
     font-size: 18px;
   }
 }
-
 @media screen and (max-width: 520px){
   #title {
     letter-spacing: .35vw;
@@ -262,7 +261,6 @@ body:not(.is_fade) .md_transition {
     font-size: 16px;
   }
 }
-
 @media screen and (max-width: 340px){
   #title {
     letter-spacing: .25vw;
@@ -305,4 +303,11 @@ body:not(.is_fade) .md_transition {
     padding-top: 30px;
     font-size: 15px;
   }
+}
+
+.iPhone #title{
+  letter-spacing: 0px;
+}
+.iPad #title{
+  letter-spacing: 0px;
 }
