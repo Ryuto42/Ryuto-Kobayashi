@@ -409,6 +409,7 @@ body:not(.is_fade) .md_transition {
 
   #skills{
     width: 90%;
+    height: 70vw;
   }
   .skills-text{
     position: relative;
