@@ -33,3 +33,13 @@ history.replaceState(null, document.getElementsByTagName('title')[0].innerHTML, 
 window.addEventListener('popstate', function() {
   fixLoad();
 }, false);
+
+if (navigator.userAgent.indexOf('iPhone') > 0) {
+  let body = document.getElementsByTagName('body')[0];
+  body.classList.add('iPhone');
+}
+
+if (navigator.userAgent.indexOf('iPad') > 0) {
+  let body = document.getElementsByTagName('body')[0];
+  body.classList.add('iPad');
+}
