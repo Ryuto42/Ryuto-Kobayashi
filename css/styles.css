@@ -306,10 +306,10 @@ body:not(.is_fade) .md_transition {
 }
 
 .iPhone #title{
-  letter-spacing: -0.1vw;
+  letter-spacing: -0.05vw;
 }
 .iPad #title{
-  letter-spacing: -0.1vw;
+  letter-spacing: -0.05vw;
 }
 .iPhone #description{
   letter-spacing: -0.1vw;

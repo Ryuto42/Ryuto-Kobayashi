@@ -464,8 +464,8 @@ body:not(.is_fade) .md_transition {
   }
 }
 .works-text h1 .iPad{
-  letter-spacing: 0px;
+  letter-spacing: -0.1vw;
 }
 .works-text h1 .iPhone{
-  letter-spacing: 0px;
+  letter-spacing: -0.1vw;
 }
