@@ -322,7 +322,7 @@ body:not(.is_fade) .md_transition {
   }
   #works{
     width: 90%;
-    height: 120vw;
+    height: 80vw;
     margin-right: auto;
     margin-left: auto;
   }
@@ -411,7 +411,7 @@ body:not(.is_fade) .md_transition {
 
   #works{
     width: 80%;
-    height: 275vw;
+    height: 180vw;
     margin-right: auto;
     margin-left: auto;
   }
@@ -464,7 +464,7 @@ body:not(.is_fade) .md_transition {
   }
 }
 .works-text h1 .iPad{
-  letter-spacing: -0.1vw;
+  letter-spacing: -0.12vw;
 }
 .works-text h1 .iPhone{
   letter-spacing: -0.1vw;
