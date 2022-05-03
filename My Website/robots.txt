@@ -1,3 +1,0 @@
-User-agent: Googlebot-Image
-Disallow: /img/
-Sitemap: https://ryuto.ga/sitemap.xml
