@@ -1,0 +1,453 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+}
+#about{
+  width: 100%;
+  height: 45vh;
+}
+#skills{
+  width: 60%;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav{
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  font-family: 'Raleway', sans-serif;
+}
+nav li {
+  list-style-type: none;
+  float: right;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  font-weight: 600;
+  margin: 30px 40px 0px;
+  animation: anima 2s cubic-bezier(0,.7,.3,1) both;
+  animation-delay: 1.5s;
+}
+@keyframes anima{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.main-visual{
+  width: 100%;
+  background:linear-gradient(45deg, #00aeff3b,#22628042,#8ed9df3d);
+  background-size: 200% 200%;/*サイズを大きくひきのばす*/
+  animation: bggradient 40s ease infinite;
+  animation-name: anim;
+  animation-delay: 0.9s;
+  animation-duration: .7s;
+  animation-timing-function: cubic-bezier(.5,0,.2,1);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: top left;
+  z-index: -1;
+}
+
+@keyframes anim {
+  0%{
+    transform: skewY(0deg);
+    height: 100vh;
+  }
+
+  100%{
+    transform: skewY(-10deg);
+    height: 95vh;
+  }
+}
+
+@keyframes bggradient{
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#main{
+  position: relative;
+}
+.main-text{
+  position: absolute;
+  top: 30%;
+  height: auto;
+  text-align: center;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.main-text h1{
+  font-size: 120px;
+  font-weight: 550;
+  letter-spacing: -0.02em;
+  margin-bottom: 0%;
+  font-family: 'Ubuntu', sans-serif;
+  animation-delay: 1.3s;
+}
+.main-text h2{
+  margin-top: 0%;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  animation-delay: 1.4s;
+}
+.delay-animation{
+  animation: delay-animation .8s cubic-bezier(0,.7,.3,1) both;
+}  
+
+@keyframes delay-animation{
+  0% {
+    transform: translateY(100px) rotate(6deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0) rotate(.01deg);
+    opacity: 1;
+  }
+}
+
+.about-text {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  margin-top: 8%;
+}
+.about-text h1{
+  font-size: 80px;
+}
+.about-text p{
+  font-size: 17px;
+}
+
+/* 左から流れるアニメーション */
+.fadeInRight {
+  -webkit-animation-fill-mode:both;
+  -ms-animation-fill-mode:both;
+  animation-fill-mode:both;
+  -webkit-animation-duration:1s;
+  -ms-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  visibility: visible !important;
+ }
+ @-webkit-keyframes fadeInRight {
+  0% { opacity: 0; -webkit-transform: translateX(-20px); }
+  100% { opacity: 1; -webkit-transform: translateX(0); }
+ }
+ @keyframes fadeInRight {
+  0% { opacity: 0; -webkit-transform: translateX(-20px); -ms-transform: translateX(-20px); transform: translateX(-20px); }
+  100% { opacity: 1; -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
+ }
+
+hr{
+  width: 70%;
+  border: none;
+  border-top: solid 2px #0167961a;
+}
+
+ .skills-text{
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  width: 20%;
+  left: 25%;
+  margin: 0%;
+  padding-top: 3%;
+  font-size: 60px;
+ }
+ .skills-items{
+   width: 58%;
+   height: 50%;
+   position: relative;
+   left: 48%;
+   padding-top: 6%;
+ }
+ .skills-items li{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+   list-style: none;
+   display: inline-block;
+   font-size: 14px;
+   background-color: rgba(229, 231, 231, 0.719);
+   border-radius: 6px;
+   padding: 6px 10px 6px 10px;
+   margin: 4px;
+ }
+
+
+footer{
+  width: auto;
+  height: 80px;
+}
+footer p{
+  font-size: 17px;
+  width: 30%;
+  float: left;
+  margin-top: 5px;
+  margin-left: 50px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.sns li {
+  list-style-type: none;
+  float: right;
+  margin: 0px 65px 0 10px;
+}
+
+.sns a {
+  display: block;
+  text-decoration: none;
+}
+.sns-twitter img{
+  width: 29px;
+}
+.sns-instagram img{
+  width: 25px;
+}
+
+/* スクロールバー変更 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00aeff3b;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #00aeff1a;
+  border-radius: 5px;
+}
+
+/* 遷移アニメーション */
+.md_transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform .4s cubic-bezier(.39, .575, .565, 1) 0s; 
+  /* ここの最後の0.8sを増減するとアニメーションの開始タイミングを変更できます */
+  z-index: 999999;
+}
+.md_transition::before {
+  background: webkit-gradient(linear, left bottom, left top, from(hsla(0, 0%, 100%, 0)), color-stop(33.33333%, #fff), color-stop(66.66667%, #fff), to(hsla(0, 0%, 100%, 0)));
+  background: -o-linear-gradient(bottom, hsla(0, 0%, 100%, 0) 0, #fff 33.33333%, #fff 66.66667%, hsla(0, 0%, 100%, 0) 100%);
+  background: linear-gradient(0deg, hsla(0, 0%, 100%, 0), rgb(239, 252, 255) 33.33333%, rgb(228, 240, 255) 66.66667%, hsla(0, 0%, 100%, 0));
+  content: "";
+  display: block;
+  width: 100%;
+  height: 300%;
+  position: absolute;
+  left: 0;
+  top: -100%;
+}
+body.is_remove .md_transition {
+  -webkit-animation: maskCloseTransition .8s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
+  animation: maskCloseTransition .8s cubic-bezier(.47, 0, .745, .715) 0s 1 forwards;
+}
+body:not(.is_fade) .md_transition {
+  transform: translateY(-200%);
+}
+@-webkit-keyframes maskCloseTransition {
+  0% { transform: translateY(200%); }
+  to { transform: translate(0); }
+}
+@keyframes maskCloseTransition {
+  0% { transform: translateY(200%); }
+  to { transform: translate(0); }
+}
+
+@media screen and (max-width:865px){
+  @keyframes anim {
+    0%{
+      transform: skewY(0deg);
+      height: 100vh;
+    }
+  
+    100%{
+      transform: skewY(-10deg);
+      height: 85vh;
+    }
+  }
+
+  nav a {
+    font-size: 19px;
+    margin: 35px 45px 0px;
+  }
+
+
+  #main{
+    height: 90vh;
+  }
+  #about{
+    height: 35vh;
+  }
+
+  .main-text{
+    top: 40%;
+    height: auto;
+    text-align: center;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+  .main-text h1{
+    font-size: 90px;
+  }
+  .main-text h2{
+    margin-top: 0%;
+    font-size: 19px;
+  }
+
+  .about-text h1{
+    font-size: 50px;
+  }
+  .about-text p{
+    font-size: 15px;
+  }
+
+
+  .skills-text{
+    padding-top: 4%;
+    font-size: 40px;
+   }
+   .skills-items{
+     width: 75%;
+     left: 43%;
+     padding-top: 6%;
+   }
+   .skills-items li{
+     font-size: 12.5px;
+     margin: 3px;
+   }
+
+  footer{
+    height: 60px;
+  }
+  footer p{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 50px;
+  }
+  .sns li {
+    margin: 0px 65px 0 10px;
+  }
+  .sns-twitter img{
+    width: 27px;
+  }
+  .sns-instagram img{
+    width: 23px;
+  }
+}
+@media screen and (max-width:480px){
+  @keyframes anim {
+    0%{
+      transform: skewY(0deg);
+      height: 100vh;
+    }
+  
+    100%{
+      transform: skewY(-10deg);
+      height: 65vh;
+    }
+  }
+
+  nav a {
+    font-size: 17px;
+    margin: 20px 30px 0px;
+  }
+
+  #main {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .main-text{
+    top: 40%;
+    height: auto;
+    text-align: center;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+  .main-text h1{
+    font-size: 70px;
+    margin-top: 0;
+  }
+  .main-text h2{
+    margin-top: 0%;
+    font-size: 17px;
+  }
+
+  .about-text h1{
+    font-size: 38px;
+  }
+  .about-text p{
+    font-size: 12px;
+  }
+
+  #skills{
+    width: 90%;
+    height: 70vw;
+  }
+  .skills-text{
+    position: relative;
+    left: 0%;
+    text-align: center;
+    padding-top: 4%;
+    font-size: 30px;
+    width: 100%;
+   }
+   .skills-items{
+     width: 105%;
+     left: 0%;
+     height: 50%;
+     padding-left: 0%;
+     padding-top: 6%;
+   }
+   .skills-items li{
+     font-size: 12.5px;
+     margin: 3px;
+   }
+
+
+  footer{
+    height: 50px;
+  }
+  footer p{
+    font-size: 14px;
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+  .sns li {
+    margin: 0px 25px 0 10px;
+  }
+  .sns-twitter img{
+    width: 24px;
+  }
+  .sns-instagram img{
+    width: 20px;
+  }
+}
